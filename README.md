@@ -25,16 +25,19 @@ make new file .env
 
 # Package
 ```bash 
-
+npm install --save react-router-dom
+npm install --save react-bootstrap bootstrap
 ```
-
 # Helper 
+- [React Router](https://reactrouter.com/web/guides/quick-start)
+- [React Bootstrap](https://react-bootstrap.github.io/)
 
 # Deploy
 - [If you error this is solution first deploy because CI build configuration](https://community.netlify.com/t/new-ci-true-build-configuration-treating-warnings-as-errors-because-process-env-ci-true/14434) 
 
 # Reference
-- [Youtube: Garrett Love ](https://www.youtube.com/watch?v=tyXMy1nPIWc&list=PLnpdZyv-BjINbUjmTUsyziHz_4fa9hM5G&index=2) 
+- [Youtube: Garrett Love ](https://www.youtube.com/watch?v=tyXMy1nPIWc&list=PLnpdZyv-BjINbUjmTUsyziHz_4fa9hM5G&index=2)
+- [Sidebar React Bootstrap](https://stackoverflow.com/questions/60482018/make-a-sidebar-from-react-bootstrap) 
 
 # React JS Default
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
