@@ -1,5 +1,6 @@
 import React from 'react';
-import { Nav } from 'react-bootstrap'; 
+import { Nav } from 'react-bootstrap';
+import * as Icon from 'react-feather';
 import './Sidebar.css';
 
 const Sidebar = props => { 
@@ -10,13 +11,29 @@ const Sidebar = props => {
             >
                 <div className="sidebar-sticky"></div>
                 <Nav.Item>
-                    <Nav.Link href="/">Home</Nav.Link>
+                    <Nav.Link href="/">
+                        <Icon.Home />
+                    </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="link-1">About</Nav.Link>
+                    <Nav.Link eventKey="link-1">
+                        <Icon.User />
+                    </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="link-2">Contact</Nav.Link>
+                    <Nav.Link eventKey="link-1">
+                        <Icon.Award />
+                    </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link eventKey="link-1">
+                        <Icon.Briefcase />
+                    </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link eventKey="link-2">
+                        <Icon.Send />
+                    </Nav.Link>
                 </Nav.Item>
             </Nav>
         </div>

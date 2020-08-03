@@ -1,0 +1,16 @@
+.menuBar{
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+
+@media (max-width: 768px) {
+    .navbar{
+      display:block!important;
+    }
+}
+
+@media (max-width: 375px) {
+    .nav-link{
+        padding: 1rem 1rem!important;
+    } 
+}

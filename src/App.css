@@ -1,4 +1,4 @@
- @media (max-width: 768px) {
+@media (max-width: 768px) {
   .col-2 {
     flex: 0 !important;
     max-width: 0 !important;
