@@ -6,7 +6,7 @@ import './MenuBar.css';
 const MenuBar = props => { 
     return (
         <div>
-            <Navbar fixed="bottom" className="col-md-12 d-sm-block d-md-block d-lg-none bg-dark menuBar">
+            <Navbar fixed="bottom" className="col-md-12 d-sm-block d-md-none d-lg-none bg-dark menuBar">
                 <Nav justify className="justify-content-center" activeKey="/">
                     <Nav.Item>
                         <Nav.Link href="/">
@@ -14,22 +14,22 @@ const MenuBar = props => {
                         </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="link-1">
+                        <Nav.Link href="/about">
                             <Icon.User />
                         </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="link-1">
+                        <Nav.Link href="/award">
                             <Icon.Award />
                         </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="link-1">
+                        <Nav.Link href="/work">
                             <Icon.Briefcase />
                         </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="link-2">
+                        <Nav.Link href="/contact">
                             <Icon.Send />
                         </Nav.Link>
                     </Nav.Item>
