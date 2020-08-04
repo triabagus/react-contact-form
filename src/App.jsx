@@ -9,7 +9,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import AwardPage from './pages/AwardPage';
 import WorkPage from './pages/WorkPage';
-import ContactPage from './pages/ContactPage';
+import ContactPage from './pages/ContactPage/ContactPage';
 
 class App extends Component {
   constructor(props) { 

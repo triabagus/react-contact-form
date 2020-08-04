@@ -28,11 +28,13 @@ make new file .env
 npm install --save react-router-dom
 npm install --save react-bootstrap bootstrap
 npm install --save react-feather
+npm install --save emailjs-com
 ```
 # Helper 
 - [React Router](https://reactrouter.com/web/guides/quick-start)
 - [React Bootstrap](https://react-bootstrap.github.io/)
 - [Icon: React Feather](https://github.com/feathericons/react-feather)
+- [Email JS](https://www.emailjs.com/)
 
 # Deploy
 - [If you error this is solution first deploy because CI build configuration](https://community.netlify.com/t/new-ci-true-build-configuration-treating-warnings-as-errors-because-process-env-ci-true/14434) 
