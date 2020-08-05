@@ -7,7 +7,7 @@ import './MenuBar.css';
 const MenuBar = props => { 
     return (
         <div>
-            <Navbar fixed="bottom" className="col-md-12 d-sm-block d-md-none d-lg-none bg-dark menuBar">
+            <Navbar fixed="bottom" className="col-md-12 d-sm-block d-md-none d-lg-none menuBar">
                 <Nav justify className="justify-content-center" activeKey="/">
                     <Nav.Item>
                         <Link to="/" className="nav-link">

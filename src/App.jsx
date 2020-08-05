@@ -1,11 +1,11 @@
 import React, { Component } from 'react'; 
 import {BrowserRouter as Router, Route } from 'react-router-dom';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import Sidebar from './components/Sidebar/Sidebar';
 import MenuBar from './components/MenuBar/MenuBar';
 import './App.css';
 
-import HomePage from './pages/HomePage';
+import HomePage from './pages/HomePage/HomePage';
 import AboutPage from './pages/AboutPage';
 import AwardPage from './pages/AwardPage';
 import WorkPage from './pages/WorkPage';
@@ -44,13 +44,10 @@ class App extends Component {
   render() { 
     return (
     <Router>  
-      <Container fluid>
-        <Row>
-          <Col xs={2} id="sidebar-wrapper">
+      <Container fluid="false"> 
             <Sidebar />
-          </Col>
-          <Col xs={10} id="content-wrapper">
-            <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
+            <div className="main-content">  
+            <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} textButton={this.state.home.textButton} />} />
             
             <Route path="/about" render={() => <AboutPage title={this.state.about.title} />} />
             
@@ -59,9 +56,8 @@ class App extends Component {
             <Route path="/work" render={() => <WorkPage title={this.state.work.title} />} />
 
             <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} />} />
-          </Col>
-          <MenuBar/>
-        </Row>
+            </div> 
+          <MenuBar/> 
       </Container>
     </Router>
     );

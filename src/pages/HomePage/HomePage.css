@@ -1,0 +1,46 @@
+.home-page{
+    position: relative;
+    margin-left: 75px;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.home-page-hero{
+    background: url('https://triabagus.github.io/images/fabian-grohs-448419-unsplash.jpg');
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    display: table-cell;
+    vertical-align: middle;  
+}
+
+.title-hero{
+    font-size: 70px!important;
+    margin-top:-100px;  
+}
+
+.subtitle-hero{
+    font-size: 30px!important;
+}
+
+@media (max-width: 425px) {
+    .home-page {
+        margin-left: 0px;
+    }
+
+    .center-sm{
+        text-align: center;
+    }
+
+    .title-hero{
+        font-size: 40px!important;
+        margin-top:-50px;  
+    }
+
+    .subtitle-hero{
+        font-size: 20px!important; 
+    }
+  }

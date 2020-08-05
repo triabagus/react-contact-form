@@ -7,7 +7,7 @@ import './Sidebar.css';
 const Sidebar = props => { 
     return (
         <div>
-            <Nav className="col-md-12 d-none d-md-block d-lg-block bg-dark sidebar"
+            <Nav className="col-md-12 d-none d-md-block d-lg-block sidebar"
             activeKey="/" 
             >
                 <div className="sidebar-sticky"></div>
