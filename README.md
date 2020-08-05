@@ -19,8 +19,10 @@ BROWSER can set for example: chrome, mozilla, etc.
 
 # ENV
 make new file .env
-```bash 
-
+```bash  
+REACT_APP_SERVICE_ID_EMAILJS=Your_ServiceId_EmailJS
+REACT_APP_TEMPLATE_ID_EMAILJS=Your_TemplateId_EmailJS
+REACT_APP_USER_ID_EMAILJS=Your_UserId_EmailJS
 ```
 
 # Package
