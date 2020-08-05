@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap'; 
 import * as Icon from 'react-feather';
+import { Link } from 'react-router-dom';
 import './MenuBar.css';
 
 const MenuBar = props => { 
@@ -9,29 +10,29 @@ const MenuBar = props => {
             <Navbar fixed="bottom" className="col-md-12 d-sm-block d-md-none d-lg-none bg-dark menuBar">
                 <Nav justify className="justify-content-center" activeKey="/">
                     <Nav.Item>
-                        <Nav.Link href="/">
+                        <Link to="/" className="nav-link">
                             <Icon.Home />
-                        </Nav.Link>
+                        </Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link href="/about">
+                        <Link to="/about" className="nav-link">
                             <Icon.User />
-                        </Nav.Link>
+                        </Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link href="/award">
+                        <Link to="/award" className="nav-link">
                             <Icon.Award />
-                        </Nav.Link>
+                        </Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link href="/work">
+                        <Link to="/work" className="nav-link">
                             <Icon.Briefcase />
-                        </Nav.Link>
+                        </Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link href="/contact">
+                        <Link to="/contact" className="nav-link">
                             <Icon.Send />
-                        </Nav.Link>
+                        </Link>
                     </Nav.Item>
                 </Nav>
             </Navbar>

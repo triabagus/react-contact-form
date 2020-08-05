@@ -1,6 +1,7 @@
 import React from 'react'; 
 import { Nav } from 'react-bootstrap';
 import * as Icon from 'react-feather';
+import { Link } from 'react-router-dom';
 import './Sidebar.css'; 
 
 const Sidebar = props => { 
@@ -11,29 +12,29 @@ const Sidebar = props => {
             >
                 <div className="sidebar-sticky"></div>
                 <Nav.Item>
-                    <Nav.Link href="/">
+                    <Link to="/" className="nav-link">
                         <Icon.Home />
-                    </Nav.Link>
+                    </Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="/about">
+                    <Link to="/about" className="nav-link">
                         <Icon.User />
-                    </Nav.Link>
+                    </Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="/award">
+                    <Link to="/award" className="nav-link">
                         <Icon.Award />
-                    </Nav.Link>
+                    </Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="/work">
+                    <Link to="/work" className="nav-link">
                         <Icon.Briefcase />
-                    </Nav.Link>
+                    </Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="/contact">
+                    <Link to="/contact" className="nav-link">
                         <Icon.Send />
-                    </Nav.Link>
+                    </Link>
                 </Nav.Item> 
             </Nav>
         </div>
