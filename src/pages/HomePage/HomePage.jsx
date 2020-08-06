@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 function HomePage(props) {
 
     return(
-        <div className="home-page">
-            <div className="home-page-hero"> 
+        <div className="pages">
+            <div className="home-page-hero pages-border"> 
                 <Row className="text-white px-5">
                     <Col className="center-sm">
                         <h1 className="title-hero">{props.title}</h1>

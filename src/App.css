@@ -1,8 +1,5 @@
-@media (max-width: 768px) {
-  .col-2 {
-    flex: 0 !important;
-    max-width: 0 !important;
-  }
+body{
+  background:#181818!important;
 }
 
 .main-content{
@@ -11,4 +8,37 @@
   width: 100%;
   overflow: hidden;
   height: 100vh;
+}
+
+.pages{
+  position: relative;
+  margin-left: 75px;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.pages-border{
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+@media (max-width: 768px) {
+  .col-2 {
+    flex: 0 !important;
+    max-width: 0 !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .pages {
+      margin-left: 0px;
+  }
+
+  .pages-border{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
 }

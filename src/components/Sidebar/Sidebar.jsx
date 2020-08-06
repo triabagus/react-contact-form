@@ -1,5 +1,5 @@
 import React from 'react'; 
-import { Nav } from 'react-bootstrap';
+import { Nav, Image } from 'react-bootstrap';
 import * as Icon from 'react-feather';
 import { Link } from 'react-router-dom';
 import './Sidebar.css'; 
@@ -9,8 +9,10 @@ const Sidebar = props => {
         <div>
             <Nav className="col-md-12 d-none d-md-block d-lg-block sidebar"
             activeKey="/" 
-            >
-                <div className="sidebar-sticky"></div>
+            >   
+                <Nav.Item>
+                    <Image src="https://triabagus.github.io/images/avatar.jpg" className="img-logo" alt="wordpress web developer portfolio tria bagus triabagus" roundedCircle /> 
+                </Nav.Item>
                 <Nav.Item>
                     <Link to="/" className="nav-link">
                         <Icon.Home />

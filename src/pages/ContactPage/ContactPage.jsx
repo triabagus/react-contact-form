@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, Button } from 'react-bootstrap'; 
+import { Container, Row, Col ,Form, Button } from 'react-bootstrap'; 
 import emailjs from 'emailjs-com';
 import './ContactPage.css';
  
@@ -66,7 +66,11 @@ class ContactPage extends Component {
         const { name, email, subject, message  } = this.state;
 
         return ( 
-            <div>
+            <div className="pages">
+                <div className="contact-page pages-border">
+                <Container fluid>    
+                <Row className="justify-content-md-center py-5">
+                <Col>    
                 {this.state.title} 
                 <Form   onSubmit={this.sendEmail}>
                     <Form.Row>
@@ -115,7 +119,11 @@ class ContactPage extends Component {
                     <Button variant="primary" type="submit" value="send">
                         Send
                     </Button>
-                </Form>
+                    </Form>
+                    </Col>
+                    </Row>
+                    </Container>
+                </div>
             </div>
         );
     }

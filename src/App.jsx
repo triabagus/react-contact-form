@@ -6,9 +6,9 @@ import MenuBar from './components/MenuBar/MenuBar';
 import './App.css';
 
 import HomePage from './pages/HomePage/HomePage';
-import AboutPage from './pages/AboutPage';
-import AwardPage from './pages/AwardPage';
-import WorkPage from './pages/WorkPage';
+import AboutPage from './pages/AboutPage/AboutPage';
+import AwardPage from './pages/AwardPage/AwardPage';
+import WorkPage from './pages/WorkPage/WorkPage';
 import ContactPage from './pages/ContactPage/ContactPage';
 
 class App extends Component {
