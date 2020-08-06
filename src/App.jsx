@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import Sidebar from './components/Sidebar/Sidebar';
 import MenuBar from './components/MenuBar/MenuBar';
+import Preloader from './components/Preloader/Preloader';
 import './App.css';
 
 import HomePage from './pages/HomePage/HomePage';
@@ -15,6 +16,7 @@ class App extends Component {
   constructor(props) { 
     super(props);
     this.state = {
+      loading: true,
       title: 'Tria Bagus',
       headerLinks: [
         {title: 'Home', path: '/'},
@@ -40,10 +42,26 @@ class App extends Component {
       }
     }
   }
+
+  sleep = milliseconds => {
+    return new Promise(resolve => setTimeout(resolve, milliseconds));
+  };
+
+  wait = async (milliseconds = 1000) => {
+    await this.sleep(milliseconds);
+    this.setState({ 
+      loading: false
+    });
+  };
+
+  componentDidMount() {
+    this.wait(5000); 
+  }
   
   render() { 
+    if (this.state.loading) return  <Preloader />;
     return (
-    <Router>  
+      <Router>
       <Container fluid="false"> 
             <Sidebar />
             <div className="main-content">  

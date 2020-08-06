@@ -46,6 +46,7 @@ npm install --save emailjs-com
 - [Sidebar React Bootstrap](https://stackoverflow.com/questions/60482018/make-a-sidebar-from-react-bootstrap) 
 - [Error send mail](https://stackoverflow.com/questions/55795125/how-to-send-email-from-my-react-web-application)
 - [Variable Env return undefined](https://stackoverflow.com/questions/53237293/react-evironment-variables-env-return-undefined/53237511)
+- [Preloader BUG](https://programmingwithmosh.com/react/create-react-loading-spinner/)
 
 # React JS Default
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).

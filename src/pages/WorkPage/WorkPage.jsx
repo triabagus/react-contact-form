@@ -6,7 +6,7 @@ function WorkPage(props) {
 
     return(
         <div className="pages">
-            <div className="work-content pages-border">
+            <div className="work-content ">
             <Container fluid>    
                 <Row className="justify-content-md-center py-5">
                 <Col>

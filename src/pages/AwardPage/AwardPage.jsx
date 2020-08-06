@@ -6,7 +6,7 @@ function AwardPage(props) {
 
     return(
         <div className="pages">
-            <div className="award-content pages-border">
+            <div className="award-content  ">
             <Container fluid>    
                 <Row className="justify-content-md-center py-5">
                 <Col>

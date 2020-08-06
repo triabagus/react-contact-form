@@ -67,10 +67,10 @@ class ContactPage extends Component {
 
         return ( 
             <div className="pages">
-                <div className="contact-page pages-border">
+                <div className="contact-page  ">
                 <Container fluid>    
                 <Row className="justify-content-md-center py-5">
-                <Col>    
+                <Col xs={12} md={6}>    
                 {this.state.title} 
                 <Form   onSubmit={this.sendEmail}>
                     <Form.Row>
@@ -121,6 +121,9 @@ class ContactPage extends Component {
                     </Button>
                     </Form>
                     </Col>
+                            <Col xs={12} md={6}>
+                        This is Contact
+                    </Col>     
                     </Row>
                     </Container>
                 </div>
