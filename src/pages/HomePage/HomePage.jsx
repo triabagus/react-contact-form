@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function HomePage(props) {
   return (
-    <div className="pages">
+    <div className="pages-home">
       <div className="home-page-hero ">
         <Row className="text-white px-5">
           <Col className="center-sm" xs={12} md={8}>
