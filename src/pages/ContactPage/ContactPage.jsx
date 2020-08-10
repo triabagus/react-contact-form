@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col ,Form, Button } from 'react-bootstrap'; 
+import { Container, Row, Col ,Form } from 'react-bootstrap'; 
 import emailjs from 'emailjs-com';
 import './ContactPage.css';
  
@@ -66,12 +66,18 @@ class ContactPage extends Component {
         const { name, email, subject, message  } = this.state;
 
         return ( 
-            <div className="pages">
-                <div className="contact-page  ">
+            <div className="pages"> 
+                <div className="section-title">
+                    <div className="main-title">
+                        <div className="title-main-page">  
+                            <h4>Let's Talk</h4>  
+                        </div>
+                    </div>
+                </div>
                 <Container fluid>    
+                  
                 <Row className="justify-content-md-center py-5">
-                <Col xs={12} md={6}>    
-                {this.state.title} 
+                <Col xs={12} md={8} lg={8}>    
                 <Form   onSubmit={this.sendEmail}>
                     <Form.Row>
                         <Form.Group controlId="formGridName" className="col-sm-12 col-md-6">  
@@ -116,17 +122,17 @@ class ContactPage extends Component {
                         />
                     </Form.Group> 
 
-                    <Button variant="primary" type="submit" value="send">
-                        Send
-                    </Button>
+                    <button className="bt-submit" type="submit" value="send">
+                        Send Message
+                    </button>
+                                
                     </Form>
                     </Col>
-                            <Col xs={12} md={6}>
-                        This is Contact
+                    <Col xs={12} md={8} lg={4} className="d-none d-lg-block">
+                        <img src="https://triabagus.github.io/images/message.svg" alt="message" />
                     </Col>     
                     </Row>
-                    </Container>
-                </div>
+                    </Container> 
             </div>
         );
     }

@@ -17,24 +17,9 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   height: 100vh;
 }
-
-.pages-home{
-  position: relative;
-  margin-left: 75px;
-  display: table;
-  table-layout: fixed; 
-  width:100%;
-  overflow: hidden;
-  height: 100vh;
-}
  
 .pages{
-  position: relative;
-  margin-left: 75px;
-  display: table;
-  table-layout: fixed; 
-  overflow: hidden;
-  height: 100vh;
+  padding:50px 70px;
 }
 
 .pb-30 {
@@ -44,7 +29,14 @@ h1, h2, h3, h4, h5, h6 {
 .pt-30 {
     padding-top: 30px;
 }
- 
+
+img {
+  vertical-align: bottom!important;
+  max-width: 100%!important;
+  height: auto!important;
+  border: 0!important;
+  -ms-interpolation-mode: bicubic;
+}
 
 @media (max-width: 768px) {
   .col-2 {
@@ -53,15 +45,16 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (max-width: 768px) {
+  .pages {
+      padding: 50px 10px;
+  } 
+}
+
 @media (max-width: 425px) {
   .pages {
-      margin-left: 0px;
-  }
-
-  .pages-home{
-      margin-left: 0px;
-  }
- 
+      padding: 50px 20px;
+  } 
 }
 
 /* Scrollbar Page */
